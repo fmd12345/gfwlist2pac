@@ -1,4 +1,5 @@
 #!/bin/sh
+source . ~/.keychain/$HOSTNAME-sh
 cd `dirname $0`
 git reset --hard
 git pull
