@@ -1,5 +1,5 @@
 #!/bin/sh
-source . ~/.keychain/$HOSTNAME-sh
+eval`keychain --noask --eval id_rsa`
 cd `dirname $0`
 git reset --hard
 git pull
